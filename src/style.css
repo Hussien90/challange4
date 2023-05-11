@@ -9,100 +9,120 @@ body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    background-image: url('./../images/pattern-background-desktop.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
-.main-heading{
-    width: 100vh;
-    max-width: 100%;
-    margin: 250px
+
+.main-heading {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.main-heading .box{
+
+.main-heading .box {
     width: 450px;
-    margin: 0 auto;
     border-radius: 13px;
-    border: 1px solid #ccc;
+    background: #fff;
 }
-.main-heading .container{
+
+.main-heading .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
-.main-heading .container .box .image{
-    width: 450px;
-    height: 220px;
+
+.main-heading .container .box .image img {
+    border-top-right-radius: 13px;
+    border-top-left-radius: 13px;
 }
-.main-heading .container h1{
+
+.main-heading .container h1 {
     font-weight: bold;
     padding-top: 20px;
 }
-.main-heading .container p{
+
+.main-heading .container p {
     color: hsl(224, 23%, 55%);
     font-size: 16px;
     line-height: 1.6;
 }
-.main-heading .container .cost{
+
+.main-heading .container .cost {
     display: flex;
     align-items: center;
     justify-content: space-around;
     background-color: hsl(225, 100%, 98%);
     width: 370px;
-    height: 65px;
     border-radius: 10px;
-    margin: 0 20px 0 37px;
+    margin: 0 auto;
+    padding: 18px 0;
 }
-.main-heading .container .cost .left{
+
+.main-heading .container .cost .left {
     display: flex;
     gap: 10px;
     align-items: center;
-    width: 180px;
-    flex-wrap: wrap;
-    padding-top: 30px;
 }
-.main-heading .container .cost .left img{
+
+.main-heading .container .cost .left img {
     width: 40px;
     height: 40px;
     object-fit: contain;
 }
-.main-heading .container .cost .left h3{
+
+.main-heading .container .cost .left h3 {
     font-size: 16px;
     font-weight: bold;
     color: hsl(223, 47%, 23%);
     margin: 0;
 }
-.main-heading .container .cost .left span{
+
+.main-heading .container .cost .left span {
     color: gray;
     font-size: 16px;
-    margin-left: 50px;
 }
-.main-heading .container .cost .right a{
-color: hsl(245, 75%, 52%);
-font-weight: bold;
-}
-.main-heading .container .cost .right a:hover{
-   text-decoration: none;
-    }
 
-.main-heading .container .box  button{
+.main-heading .container .cost .right a {
+    color: hsl(245, 75%, 52%);
+    font-weight: bold;
+}
+
+.main-heading .container .cost .right a:hover {
+    text-decoration: none;
+}
+
+.main-heading .container .box button {
     color: hsl(225, 100%, 98%);
-    padding: 15px 110px;
+    padding: 15px 0;
     border-radius: 10px;
     font-size: 16px;
+    width: 370px;
     font-weight: bold;
     margin: 20px;
-    background-color:hsl(245, 75%, 52%);
+    background-color: hsl(245, 75%, 52%);
+    border: none;
     cursor: pointer;
-    box-shadow: 0px 25px;
+    -webkit-box-shadow: 0px 15px 18px -4px rgb(132, 132, 134);
+    -moz-box-shadow: 0px 15px 18px -4px rgb(132, 132, 134);
+    box-shadow: 0px 15px 18px -4px rgb(132, 132, 134);
 }
-.main-heading .container .box  button:hover{
-   
-    background-color:hsl(233.07deg 86.97% 47.5% / 52%);
+
+.main-heading .container .box button:hover {
+
+    background-color: hsl(233.07deg 86.97% 47.5% / 52%);
 }
-.main-heading .container .box p:last-child{
+
+.main-heading .container .box p:last-child {
     font-weight: bold;
     font-size: 16px;
     padding-bottom: 15px;
     cursor: pointer;
 }
-.main-heading .container .box p:last-child:hover{
+
+.main-heading .container .box p:last-child:hover {
     color: hsl(223, 47%, 23%);
 }
